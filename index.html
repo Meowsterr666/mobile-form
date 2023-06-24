@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/491bfda7f7.js" crossorigin="anonymous"></script>
     <title>Mobile Form</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <header class="navbar header">
-      <div>
         <ul class="navbar-header">
           <li class="head-items">
             <i class="fa-solid fa-square"></i>
@@ -41,5 +42,77 @@
         </ul>
       </div>
     </header>
+    <form action="/action_page.php" target="_blank" method="post">
+      <div class="box">
+        <label for="Name" class="Name"><i class="fa-solid fa-user fa-xl"></i></label>
+        <input id="Name"
+              name="Name"
+              type="text"
+              placeholder="Name"
+              size="41"
+              required>
+        <br><br>
+        <label for="telephone"><i class="fa-solid fa-phone fa-xl"></i></label>
+        <input id="telephone" 
+              type="number" 
+              placeholder="Phone Number"
+              required
+              size="20"
+              autocomplete="off">
+        <select id="telephone" 
+                name="telephone"
+                type="list"
+                required>
+          <option disabled selected>Label</option>
+          <option value="831">831</option>
+          <option value="1800">1800</option>
+          <option value="678">678</option>
+          <option value="420">420</option>
+        </select>
+        <br><br> 
+        <label for="Address" class="Address"><i class="fa-solid fa-location-dot fa-xl"></i></label>
+        <input id="Address"
+                name="Address"
+                type="text"
+                placeholder="Address"
+                size="41"
+                required>
+        <br><br>
+        <label for="City" class=" City"></label>
+        <input id="City"
+              name="City"
+              type="text"
+              placeholder="City"
+              size="41"
+              required> 
+        <br><br>
+        <select id="State" name="State" required>
+          <option value="California">California</option>
+          <option value="Texas" selected>Texas</option>
+          <option value="Arizona">Arizona</option>
+          <option value="NewYork">NewYork</option>
+        </select>
+        <label for="zip" class="zip"></label>
+        <input id="zip"
+               name="zip"
+               type="text"
+               placeholder="Zip"
+               size="10"
+               required>
+        <br><br>
+        <label for="Email" class="Email"><i class="fa-solid fa-envelope fa-xl"></i></label>
+        <input id="Email"
+               name="Email"
+               type="text"
+               placeholder="Email"
+               size="41"
+               required>
+        <br><br>
+        <label for="dob"><i class="fa-solid fa-cake-candles fa-xl"></i></label>
+        <input id="dob"
+               type="date"
+               placeholder="Birthday"
+               required>
+    </form>
   </body>
 </html>
